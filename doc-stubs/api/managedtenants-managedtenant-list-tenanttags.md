@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.WriteRead.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [tenantTag](../resources/tenanttag.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tenantTag](../resources/managedtenants-tenanttag.md) objects in the response body.
 
 ## Examples
 
@@ -93,4 +93,3 @@ Content-Type: application/json
   ]
 }
 ```
-

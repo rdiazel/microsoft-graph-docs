@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ManagedTenants.WriteRead.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -46,16 +46,14 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md)|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|createdByUserId|String|**TODO: Add Description**|
-|modifiedByUserId|String|**TODO: Add Description**|
-|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description**|
-
-
+|id|String|The unique identifier of the tenant tag. Inherited from [entity](../resources/managedtenants-entity.md)|
+|displayName|String|The display name of the tenant tag.|
+|description|String|The description of the tenant tag.|
+|createdByUserId|String|The identifier of the user that created the tenant tag.|
+|modifiedByUserId|String|The identifier of the user that modified the tenant tag.|
+|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|A collection of managed tenant information associated with the tenant tag.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the tenant tag was last modified.|
+|deletedDateTime|DateTimeOffset|The date and time the tenant tag was deleted.|
 
 ## Response
 
@@ -118,4 +116,3 @@ Content-Type: application/json
   "deletedDateTime": "String (timestamp)"
 }
 ```
-

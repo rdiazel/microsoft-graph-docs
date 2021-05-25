@@ -30,7 +30,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|customerContacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of contacts for the managed tenant.|
+|contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of contacts for the managed tenant.|
 |displayName|String|The display name of the managed tenant.|
 |id|String|The unique identifier for the managed tenant. Inherited from [entity](../resources/managedtenants-entity.md).|
 |tenantId|String|The Azure Active Directory tenant identifer for the managed tenant.|
@@ -57,7 +57,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "displayName": "String",
   "tenantId": "String",
-  "customerContacts": [
+  "contacts": [
     {
       "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
     }

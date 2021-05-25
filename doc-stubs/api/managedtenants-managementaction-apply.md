@@ -1,6 +1,6 @@
 ---
 title: "managementAction: apply"
-description: "**TODO: Add Description**"
+description: "Applies the management action on behalf of a managed tenant in a specific tenant group."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Applies the management action on behalf of a managed tenant in a specific tenant group.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ManagedTenants.WriteRead.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -49,9 +49,6 @@ The following table shows the parameters that can be used with this action.
 |tenantId|String|**TODO: Add Description**|
 |managementIntentId|String|**TODO: Add Description**|
 |managementTemplateId|String|**TODO: Add Description**|
-|managementTemplateVersion|Int32|**TODO: Add Description**|
-
-
 
 ## Response
 
@@ -97,4 +94,3 @@ Content-Type: application/json
   }
 }
 ```
-
