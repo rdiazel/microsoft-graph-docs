@@ -39,7 +39,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedTenants.managementTemplateDetailedInfo",
   "managementTemplateId": "String",
-  "managementTemplateVersion": "Integer",
   "displayName": "String",
   "category": "String"
 }

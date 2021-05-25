@@ -1,6 +1,6 @@
 ---
 title: "tenantContactInformation resource type"
-description: "**TODO: Add Description**"
+description: "Represents contact information for a managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -13,21 +13,24 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents contact information for a managed tenant.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|email|String|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|notes|String|**TODO: Add Description**|
-|phone|String|**TODO: Add Description**|
-|title|String|**TODO: Add Description**|
+|email|String|The email address for a contact of the managed tenant.|
+|name|String|The name for a contact of the managed tenant.|
+|notes|String|Notes for a contact of the managed tenant.|
+|phone|String|The phone number for a contact of the managed tenant.|
+|title|String|The title for a contact of the managed tenant.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -44,4 +47,3 @@ The following is a JSON representation of the resource.
   "notes": "String"
 }
 ```
-

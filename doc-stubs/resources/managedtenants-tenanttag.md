@@ -1,6 +1,6 @@
 ---
 title: "tenantTag resource type"
-description: "**TODO: Add Description**"
+description: "Represent a tag associated with a managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represent a tag associated with a managed tenant.
 
 Inherits from [entity](../resources/managedtenants-entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List tenantTags](../api/managedtenants-tenanttag-list.md)|[microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md) collection|Get a list of the [tenantTag](../resources/managedtenants-tenanttag.md) objects and their properties.|
@@ -28,21 +28,24 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |[Delete tenantTag](../api/managedtenants-tenanttag-delete.md)|None|Deletes a [tenantTag](../resources/managedtenants-tenanttag.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdByUserId|String|**TODO: Add Description**|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
+|createdByUserId|String|The identifier of the user that created the tenant tag.|
+|deletedDateTime|DateTimeOffset|The date and time the tenant tag was deleted.|
+|description|String|The description of the tenant tag.|
+|displayName|String|The display name of the tenant tag.|
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md).|
 |lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
 |managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|**TODO: Add Description**|
 |modifiedByUserId|String|**TODO: Add Description**|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -69,4 +72,3 @@ The following is a JSON representation of the resource.
   "deletedDateTime": "String (timestamp)"
 }
 ```
-

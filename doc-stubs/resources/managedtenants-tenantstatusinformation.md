@@ -1,6 +1,6 @@
 ---
 title: "tenantStatusInformation resource type"
-description: "**TODO: Add Description**"
+description: "Represents the information regarding onboarding status of the managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -13,24 +13,27 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the information regarding onboarding status of the managed tenant.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|delegatedPrivilegeStatus|delegatedPrivilegeStatus|**TODO: Add Description**. Possible values are: `none`, `delegatedAdminPrivileges`, `unknownFutureValue`.|
-|lastDelegatedPrivilegeRefreshDateTime|DateTimeOffset|**TODO: Add Description**|
-|offboardedByUserId|String|**TODO: Add Description**|
-|offboardedDateTime|DateTimeOffset|**TODO: Add Description**|
-|onboardedByUserId|String|**TODO: Add Description**|
-|onboardedDateTime|DateTimeOffset|**TODO: Add Description**|
-|onboardingStatus|tenantOnboardingStatus|**TODO: Add Description**. Possible values are: `ineligible`, `inProcess`, `active`, `inactive`, `unknownFutureValue`.|
-|workloadStatuses|[microsoft.graph.managedTenants.workloadStatus](../resources/managedtenants-workloadstatus.md) collection|**TODO: Add Description**|
+|delegatedPrivilegeStatus|delegatedPrivilegeStatus|The status of the delegated admin privileges relationship that exists with the managed tenant. Possible values are: `none`, `delegatedAdminPrivileges`, `unknownFutureValue`.|
+|lastDelegatedPrivilegeRefreshDateTime|DateTimeOffset|The date and time the delegated admin privilege relationship information was last refreshed.|
+|offboardedByUserId|String|The identifier of the user that performed the off boarding action. If this is empty the managed tenant has either not been off boarded or the action was performed automatically.|
+|offboardedDateTime|DateTimeOffset|The date and time the managed tenant was off boarded.|
+|onboardedByUserId|String|The identifier of the user that on boarded the managed tenant. If this is empty the platform automatically on boarded the managed tenant.|
+|onboardedDateTime|DateTimeOffset|The date and time the managed tenant was on boarded.|
+|onboardingStatus|tenantOnboardingStatus|The on boarding status for the managed to the management platform. Possible values are: `ineligible`, `inProcess`, `active`, `inactive`, `unknownFutureValue`.|
+|workloadStatuses|[microsoft.graph.managedTenants.workloadStatus](../resources/managedtenants-workloadstatus.md) collection|The on boarding information for each Microsoft 365 service currently supported by the management platform.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -54,4 +57,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

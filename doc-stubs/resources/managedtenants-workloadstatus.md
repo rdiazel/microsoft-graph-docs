@@ -1,6 +1,6 @@
 ---
 title: "workloadStatus resource type"
-description: "**TODO: Add Description**"
+description: "Represent the on boarding status for a given Microsoft 365 service supported by the management platform."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -13,20 +13,23 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represent the on boarding status for a given Microsoft 365 service supported by the management platform.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|offboardedDateTime|DateTimeOffset|**TODO: Add Description**|
-|onboardedDateTime|DateTimeOffset|**TODO: Add Description**|
-|onboardingStatus|workloadOnboardingStatus|**TODO: Add Description**. Possible values are: `notOnboarded`, `onboarded`, `unknownFutureValue`.|
+|displayName|String|The display of the workload associated with this status.|
+|offboardedDateTime|DateTimeOffset|The date and time the workload was off boarded.|
+|onboardedDateTime|DateTimeOffset|The date and time the workload was on boarded.|
+|onboardingStatus|workloadOnboardingStatus|The on boarding status of the workload. Possible values are: `notOnboarded`, `onboarded`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -42,4 +45,3 @@ The following is a JSON representation of the resource.
   "offboardedDateTime": "String (timestamp)"
 }
 ```
-

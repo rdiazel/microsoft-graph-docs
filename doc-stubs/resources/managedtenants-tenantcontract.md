@@ -1,6 +1,6 @@
 ---
 title: "tenantContract resource type"
-description: "**TODO: Add Description**"
+description: "Represents the contract that exists between a managed tenant and the managing entity."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -13,18 +13,21 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the contract that exists between a managed tenant and the managing entity.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|contractType|String|**TODO: Add Description**|
-|defaultDomainName|String|**TODO: Add Description**|
+|contractType|String|The type of contract that exists between a managed tenant and the managing entity.|
+|defaultDomainName|String|The default domain name of the managed tenant.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -38,4 +41,3 @@ The following is a JSON representation of the resource.
   "defaultDomainName": "String"
 }
 ```
-

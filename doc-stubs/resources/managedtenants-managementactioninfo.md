@@ -36,7 +36,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedTenants.managementActionInfo",
   "managementTemplateId": "String",
-  "managementTemplateVersion": "Integer",
   "managementActionId": "String"
 }
 ```

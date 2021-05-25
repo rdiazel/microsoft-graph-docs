@@ -1,6 +1,6 @@
 ---
 title: "workloadActionDeploymentStatus resource type"
-description: "**TODO: Add Description**"
+description: "Represents the deployment status for a workload action."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -13,20 +13,23 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the deployment status for a workload action.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|actionId|String|**TODO: Add Description**|
-|deployedPolicyId|String|**TODO: Add Description**|
-|lastDeploymentDateTime|DateTimeOffset|**TODO: Add Description**|
-|status|workloadActionStatus|**TODO: Add Description**. Possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `unknownFutureValue`.|
+|actionId|String|The identifier of the workload action.|
+|deployedPolicyId|String|The identifier of the deployed policy.|
+|lastDeploymentDateTime|DateTimeOffset|The date and time the deployment status was last updated.|
+|status|workloadActionStatus|The deployment status of the workload action. Possible values are: `toAddress`, `completed`, `error`, `timeOut`, `inProgress`, `unknownFutureValue`.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -42,4 +45,3 @@ The following is a JSON representation of the resource.
   "lastDeploymentDateTime": "String (timestamp)"
 }
 ```
-

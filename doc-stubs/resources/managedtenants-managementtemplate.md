@@ -57,7 +57,6 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "category": "String",
-  "version": "Integer",
   "parameters": [
     {
       "@odata.type": "microsoft.graph.managedTenants.templateParameter"

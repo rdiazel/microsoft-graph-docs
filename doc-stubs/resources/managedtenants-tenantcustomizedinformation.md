@@ -1,6 +1,6 @@
 ---
 title: "tenantCustomizedInformation resource type"
-description: "**TODO: Add Description**"
+description: "Represents the customized information for each managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -13,33 +13,35 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the customized information for each managed tenant.
 
 Inherits from [entity](../resources/managedtenants-entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List tenantCustomizedInformations](../api/managedtenants-tenantcustomizedinformation-list.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection|Get a list of the [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) objects and their properties.|
 |[Create tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-create.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|Create a new [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
 |[Get tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-get.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|Read the properties and relationships of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
 |[Update tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-update.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|Update the properties of a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
-|[Delete tenantCustomizedInformation](../api/managedtenants-tenantcustomizedinformation-delete.md)|None|Deletes a [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|customerContacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md).|
-|tenantId|String|**TODO: Add Description**|
-|website|String|**TODO: Add Description**|
+|customerContacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of contacts for the managed tenant.|
+|displayName|String|The display name of the managed tenant.|
+|id|String|The unique identifier for the managed tenant. Inherited from [entity](../resources/managedtenants-entity.md).|
+|tenantId|String|The Azure Active Directory tenant identifer for the managed tenant.|
+|website|String|The website associated with the managed tenant.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -63,4 +65,3 @@ The following is a JSON representation of the resource.
   "website": "String"
 }
 ```
-
