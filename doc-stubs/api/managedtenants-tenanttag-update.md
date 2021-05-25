@@ -46,16 +46,10 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md)|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|createdByUserId|String|**TODO: Add Description**|
-|modifiedByUserId|String|**TODO: Add Description**|
-|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description**|
-
-
+|id|String|The identifier of the tenant tag.|
+|displayName|String|The display name of the tenant tag.|
+|description|String|The description of the tenant tag.|
+|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|A collection of managed tenants associated with the tenant tag.|
 
 ## Response
 

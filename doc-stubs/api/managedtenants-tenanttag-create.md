@@ -46,16 +46,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md)|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|createdByUserId|String|**TODO: Add Description**|
-|modifiedByUserId|String|**TODO: Add Description**|
-|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description**|
-
-
+|displayName|String|The display name of the tenant tag.|
+|description|String|The description of the tenant tag.|
+|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|A collection of managed tenants associated with the tenant tag.|
 
 ## Response
 
@@ -89,7 +82,6 @@ Content-length: 347
 }
 ```
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -118,4 +110,3 @@ Content-Type: application/json
   "deletedDateTime": "String (timestamp)"
 }
 ```
-
