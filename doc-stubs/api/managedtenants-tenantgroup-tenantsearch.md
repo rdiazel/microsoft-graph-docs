@@ -1,6 +1,6 @@
 ---
 title: "tenantGroup: tenantSearch"
-description: "**TODO: Add Description**"
+description: "Searches for all tenant groups that contain a specific managed tenant identifier."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Searches for all tenant groups that contain a specific managed tenant identifier.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,9 +46,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description**|
-
-
+|tenantId|String|The Azure Active Directory tenant identifier of interest.|
 
 ## Response
 
@@ -109,4 +107,3 @@ Content-Type: application/json
   ]
 }
 ```
-

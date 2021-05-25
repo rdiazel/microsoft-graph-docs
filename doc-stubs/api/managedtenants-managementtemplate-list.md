@@ -81,7 +81,6 @@ Content-Type: application/json
       "displayName": "String",
       "description": "String",
       "category": "String",
-      "version": "Integer",
       "parameters": [
         {
           "@odata.type": "microsoft.graph.managedTenants.templateParameter"
@@ -96,4 +95,3 @@ Content-Type: application/json
   ]
 }
 ```
-

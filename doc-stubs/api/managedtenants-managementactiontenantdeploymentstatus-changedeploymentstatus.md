@@ -1,6 +1,6 @@
 ---
 title: "managementActionTenantDeploymentStatus: changeDeploymentStatus"
-description: "**TODO: Add Description**"
+description: "Changes the management action tenant deployment status for a managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Changes the status of a [managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) for a managed tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,14 +46,11 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantGroupId|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|managementActionId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
-|managementTemplateVersion|Int32|**TODO: Add Description**|
-|status|String|**TODO: Add Description**|
-
-
+|tenantGroupId|String|The identifier of the tenant group.|
+|tenantId|String|The identifier of the Azure Active Directory tenant where the status will be updated.|
+|managementActionId|String|The identifier of the management action.|
+|managementTemplateId|String|The identifier of the management template.|
+|status|String|The updated status value for the management action tenant deployment status.|
 
 ## Response
 
@@ -77,7 +74,6 @@ Content-length: 196
   "tenantId": "String",
   "managementActionId": "String",
   "managementTemplateId": "String",
-  "managementTemplateVersion": "Integer",
   "status": "String"
 }
 ```
@@ -101,4 +97,3 @@ Content-Type: application/json
   }
 }
 ```
-

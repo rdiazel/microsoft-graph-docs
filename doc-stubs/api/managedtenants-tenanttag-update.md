@@ -117,4 +117,3 @@ Content-Type: application/json
   "deletedDateTime": "String (timestamp)"
 }
 ```
-
