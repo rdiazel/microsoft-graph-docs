@@ -1,0 +1,264 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "141f4d58-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "managementIntents",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementIntents** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "1421ae88-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "managementTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementTemplates** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "142411e3-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "managementActions",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementActions** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "14267281-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenantGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantGroups** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "1428d644-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "managementActionTenantDeploymentStatuses",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementActionTenantDeploymentStatuses** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "142b3824-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementIntent",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementIntent](https://docs.microsoft.com/en-us/graph/api/resources/managementIntent?view=graph-rest-beta) resource type.",
+          "Target": "managementIntent"
+        },
+        {
+          "Id": "142d99f3-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementTemplate](https://docs.microsoft.com/en-us/graph/api/resources/managementTemplate?view=graph-rest-beta) resource type.",
+          "Target": "managementTemplate"
+        },
+        {
+          "Id": "142ffb72-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementAction](https://docs.microsoft.com/en-us/graph/api/resources/managementAction?view=graph-rest-beta) resource type.",
+          "Target": "managementAction"
+        },
+        {
+          "Id": "14325df8-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantGroup](https://docs.microsoft.com/en-us/graph/api/resources/tenantGroup?view=graph-rest-beta) resource type.",
+          "Target": "tenantGroup"
+        },
+        {
+          "Id": "1434c425-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementActionTenantDeploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementActionTenantDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managementActionTenantDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Target": "managementActionTenantDeploymentStatus"
+        },
+        {
+          "Id": "143724b6-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementTemplateDetailedInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementTemplateDetailedInfo](https://docs.microsoft.com/en-us/graph/api/resources/managementTemplateDetailedInfo?view=graph-rest-beta) resource type.",
+          "Target": "managementTemplateDetailedInfo"
+        },
+        {
+          "Id": "143986b5-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "templateParameter",
+          "ChangeType": "Addition",
+          "Description": "Added the [templateParameter](https://docs.microsoft.com/en-us/graph/api/resources/templateParameter?view=graph-rest-beta) resource type.",
+          "Target": "templateParameter"
+        },
+        {
+          "Id": "143be855-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workloadAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [workloadAction](https://docs.microsoft.com/en-us/graph/api/resources/workloadAction?view=graph-rest-beta) resource type.",
+          "Target": "workloadAction"
+        },
+        {
+          "Id": "143e4daf-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "controlMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [controlMapping](https://docs.microsoft.com/en-us/graph/api/resources/controlMapping?view=graph-rest-beta) resource type.",
+          "Target": "controlMapping"
+        },
+        {
+          "Id": "1440b17b-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "setting",
+          "ChangeType": "Addition",
+          "Description": "Added the [setting](https://docs.microsoft.com/en-us/graph/api/resources/setting?view=graph-rest-beta) resource type.",
+          "Target": "setting"
+        },
+        {
+          "Id": "14431007-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementIntentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementIntentInfo](https://docs.microsoft.com/en-us/graph/api/resources/managementIntentInfo?view=graph-rest-beta) resource type.",
+          "Target": "managementIntentInfo"
+        },
+        {
+          "Id": "14457803-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementActionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementActionInfo](https://docs.microsoft.com/en-us/graph/api/resources/managementActionInfo?view=graph-rest-beta) resource type.",
+          "Target": "managementActionInfo"
+        },
+        {
+          "Id": "1447d74d-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managementActionDeploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [managementActionDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managementActionDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Target": "managementActionDeploymentStatus"
+        },
+        {
+          "Id": "144a39ef-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workloadActionDeploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [workloadActionDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/workloadActionDeploymentStatus?view=graph-rest-beta) resource type.",
+          "Target": "workloadActionDeploymentStatus"
+        },
+        {
+          "Id": "144c9c5d-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "managementCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementCategory** enumeration type.",
+          "Target": "managementCategory"
+        },
+        {
+          "Id": "144efd00-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "workloadActionCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **workloadActionCategory** enumeration type.",
+          "Target": "workloadActionCategory"
+        },
+        {
+          "Id": "1451771c-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "managementParameterValueType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementParameterValueType** enumeration type.",
+          "Target": "managementParameterValueType"
+        },
+        {
+          "Id": "1453c521-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "managementActionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **managementActionStatus** enumeration type.",
+          "Target": "managementActionStatus"
+        },
+        {
+          "Id": "1456258f-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "workloadActionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **workloadActionStatus** enumeration type.",
+          "Target": "workloadActionStatus"
+        },
+        {
+          "Id": "14588898-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Method",
+          "ChangedApiName": "apply",
+          "ChangeType": "Addition",
+          "Description": "Added the [apply](https://docs.microsoft.com/en-us/graph/api/managementAction-apply?view=graph-rest-beta) method to the [managementAction](https://docs.microsoft.com/en-us/graph/api/resources/managementAction?view=graph-rest-beta) resource.",
+          "Target": "managementAction"
+        },
+        {
+          "Id": "145ae80c-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Method",
+          "ChangedApiName": "tenantSearch",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantSearch](https://docs.microsoft.com/en-us/graph/api/tenantGroup-tenantSearch?view=graph-rest-beta) method to the [tenantGroup](https://docs.microsoft.com/en-us/graph/api/resources/tenantGroup?view=graph-rest-beta) resource.",
+          "Target": "tenantGroup"
+        },
+        {
+          "Id": "145d48f4-bcfd-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Method",
+          "ChangedApiName": "changeDeploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [changeDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/managementActionTenantDeploymentStatus-changeDeploymentStatus?view=graph-rest-beta) method to the [managementActionTenantDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managementActionTenantDeploymentStatus?view=graph-rest-beta) resource.",
+          "Target": "managementActionTenantDeploymentStatus"
+        }
+      ],
+      "Id": "141ceb77-bcfd-11eb-a7e3-4fa3ab232c0e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-25T02:01:11.511Z",
+      "WorkloadArea": "",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "700aa829-bcfe-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenantTags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantTags** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "700d0f94-bcfe-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource type.",
+          "Target": "tenantTag"
+        },
+        {
+          "Id": "700f6c9e-bcfe-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "managedTenantInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedTenantInfo](https://docs.microsoft.com/en-us/graph/api/resources/managedTenantInfo?view=graph-rest-beta) resource type.",
+          "Target": "managedTenantInfo"
+        }
+      ],
+      "Id": "70084406-bcfe-11eb-a7e3-4fa3ab232c0e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-25T02:10:55.223Z",
+      "WorkloadArea": "",
+      "SubArea": ""
+    }
+  ]
+}

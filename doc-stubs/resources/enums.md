@@ -7,9 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo
 doc_type: enumTypes
 ---
 
-### managementActionStatus values 
-
-
+### managementActionStatus values
 
 |Member|
 |:---|
@@ -24,9 +22,7 @@ doc_type: enumTypes
 |riskAccepted|
 |unknownFutureValue|
 
-### managementCategory values 
-
-
+### managementCategory values
 
 |Member|
 |:---|
@@ -35,9 +31,7 @@ doc_type: enumTypes
 |custom|
 |unknownFutureValue|
 
-### managementParameterValueType values 
-
-
+### managementParameterValueType values
 
 |Member|
 |:---|
@@ -51,9 +45,7 @@ doc_type: enumTypes
 |guidCollection|
 |unknownFutureValue|
 
-### workloadActionCategory values 
-
-
+### workloadActionCategory values
 
 |Member|
 |:---|
@@ -61,9 +53,7 @@ doc_type: enumTypes
 |manual|
 |unknownFutureValue|
 
-### workloadActionStatus values 
-
-
+### workloadActionStatus values
 
 |Member|
 |:---|
@@ -74,3 +64,28 @@ doc_type: enumTypes
 |inProgress|
 |unknownFutureValue|
 
+### delegatedPrivilegeStatus values
+
+|Member|
+|:---|
+|none|
+|delegatedAdminPrivileges|
+|unknownFutureValue|
+
+### tenantOnboardingStatus values
+
+|Member|
+|:---|
+|ineligible|
+|inProcess|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### workloadOnboardingStatus values
+
+|Member|
+|:---|
+|notOnboarded|
+|onboarded|
+|unknownFutureValue|
