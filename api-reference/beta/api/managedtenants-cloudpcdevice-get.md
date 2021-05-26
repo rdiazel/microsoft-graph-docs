@@ -1,25 +1,25 @@
 ---
-title: "List managementIntents"
-description: "Get a list of the managementIntent objects and their properties."
+title: "Get cloudPcDevice"
+description: "Read the properties and relationships of a cloudPcDevice object."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# List managementIntents
-Namespace: microsoft.graph.managedTenants
+# Get cloudPcDevice
+Namespace: microsoft.graph.manageTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [managementIntent](../resources/managedtenants-managementintent.md) objects and their properties.
+Read the properties and relationships of a [cloudPcDevice](../resources/managedtenant-cloudpcdevice.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.WriteRead.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/managementIntents
+GET /cloudPcDevices/{id}
 ```
 
 ## Optional query parameters
@@ -46,27 +46,27 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [managementIntent](../resources/managedtenants-managementintent.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) object in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "list_managementintent"
+  "name": "get_cloudpcdevice"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementIntents
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcDevices/{id}
 ```
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.managedTenants.managementIntent)"
+  "@odata.type": "microsoft.graph.managedTenants.cloudPcDevice"
 }
 -->
 ``` http
@@ -74,18 +74,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.managedTenants.managementIntent",
-      "id": "f2587301-7301-f258-0173-58f2017358f2",
-      "displayName": "String",
-      "isGlobal": "Boolean",
-      "managementTemplates": [
-        {
-          "@odata.type": "microsoft.graph.managedTenants.managementTemplateDetailedInfo"
-        }
-      ]
-    }
-  ]
+  "@odata.type": "#microsoft.graph.managedTenants.cloudPcDevice",
+  "id": "89cbd202-d202-89cb-02d2-cb8902d2cb89",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
+  "displayName": "String",
+  "managedDeviceId": "String",
+  "managedDeviceName": "String",
+  "userPrincipalName": "String",
+  "servicePlanName": "String",
+  "status": "String",
+  "lastRefreshedDateTime": "String (timestamp)",
+  "policyId": "String"
 }
 ```
