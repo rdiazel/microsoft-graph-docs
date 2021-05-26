@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represent a tag associated with a managed tenant.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -35,10 +33,10 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |deletedDateTime|DateTimeOffset|The date and time the tenant tag was deleted.|
 |description|String|The description of the tenant tag.|
 |displayName|String|The display name of the tenant tag.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|**TODO: Add Description**|
-|modifiedByUserId|String|**TODO: Add Description**|
+|id|String|The identifier of the tenant tag.|
+|lastModifiedDateTime|DateTimeOffset|The date and time the tenant tag was last modified.|
+|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|A collection of managed tenants associated with the tenant tag.|
+|modifiedByUserId|String|The identifier of the user that last modified the tenant tag.|
 
 ## Relationships
 

@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the tenant tag. Inherited from [entity](../resources/managedtenants-entity.md)|
+|id|String|The unique identifier of the tenant tag.|
 |displayName|String|The display name of the tenant tag.|
 |description|String|The description of the tenant tag.|
 |createdByUserId|String|The identifier of the user that created the tenant tag.|
@@ -86,7 +86,6 @@ Content-length: 347
   "deletedDateTime": "String (timestamp)"
 }
 ```
-
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.

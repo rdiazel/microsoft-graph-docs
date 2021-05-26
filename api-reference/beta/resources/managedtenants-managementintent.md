@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represents the intent to manage a group of managed tenants.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -29,7 +27,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the management intent.|
-|id|String|The unique identifier of the management intent. Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|The unique identifier of the management intent.|
 |isGlobal|Boolean|A flag indicating whether or not the management intent is global.|
 |managementTemplates|[microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md) collection|A collection of management templates associated with the management intent.|
 

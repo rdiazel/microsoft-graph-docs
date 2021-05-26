@@ -15,32 +15,19 @@ Namespace: microsoft.graph.managedTenants
 
 **TODO: Add Description**
 
-
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List managedTenants](../api/managedtenants-managedtenant-list.md)|[microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md) collection|Get a list of the [managedTenant](../resources/managedtenants-managedtenant.md) objects and their properties.|
-|[Create managedTenant](../api/managedtenants-managedtenant-create.md)|[microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md)|Create a new [managedTenant](../resources/managedtenants-managedtenant.md) object.|
-|[Get managedTenant](../api/managedtenants-managedtenant-get.md)|[microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md)|Read the properties and relationships of a [managedTenant](../resources/managedtenants-managedtenant.md) object.|
-|[Update managedTenant](../api/managedtenants-managedtenant-update.md)|[microsoft.graph.managedTenants.managedTenant](../resources/managedtenants-managedtenant.md)|Update the properties of a [managedTenant](../resources/managedtenants-managedtenant.md) object.|
-|[Delete managedTenant](../api/managedtenants-managedtenant-delete.md)|None|Deletes a [managedTenant](../resources/managedtenants-managedtenant.md) object.|
 |[List managementActions](../api/managedtenants-managedtenant-list-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md) collection|Get the managementAction resources from the managementActions navigation property.|
-|[Create managementAction](../api/managedtenants-managedtenant-post-managementactions.md)|[microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|Create a new managementAction object.|
 |[List managementActionTenantDeploymentStatuses](../api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses.md)|[microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md) collection|Get the managementActionTenantDeploymentStatus resources from the managementActionTenantDeploymentStatuses navigation property.|
-|[Create managementActionTenantDeploymentStatus](../api/managedtenants-managedtenant-post-managementactiontenantdeploymentstatuses.md)|[microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md)|Create a new managementActionTenantDeploymentStatus object.|
 |[List managementIntents](../api/managedtenants-managedtenant-list-managementintents.md)|[microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md) collection|Get the managementIntent resources from the managementIntents navigation property.|
-|[Create managementIntent](../api/managedtenants-managedtenant-post-managementintents.md)|[microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md)|Create a new managementIntent object.|
 |[List managementTemplates](../api/managedtenants-managedtenant-list-managementtemplates.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md) collection|Get the managementTemplate resources from the managementTemplates navigation property.|
-|[Create managementTemplate](../api/managedtenants-managedtenant-post-managementtemplates.md)|[microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|Create a new managementTemplate object.|
 |[List tenantGroups](../api/managedtenants-managedtenant-list-tenantgroups.md)|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md) collection|Get the tenantGroup resources from the tenantGroups navigation property.|
-|[Create tenantGroup](../api/managedtenants-managedtenant-post-tenantgroups.md)|[microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|Create a new tenantGroup object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|**TODO: Add Description**.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -79,4 +66,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

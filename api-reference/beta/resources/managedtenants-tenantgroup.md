@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represents a logical group of managed tenants.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -31,7 +29,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |:---|:---|:---|
 |allTenantsIncluded|Boolean|A flag indicating whether all managed tenants are included in the tenant group.|
 |displayName|String|The display name of the tenant group.|
-|id|String|The unique identifier of the tenant group. Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|The unique identifier of the tenant group.|
 |managementActions|[microsoft.graph.managedTenants.managementActionInfo](../resources/managedtenants-managementactioninfo.md) collection|A collection of management actions associated with the tenant group.|
 |managementIntents|[microsoft.graph.managedTenants.managementIntentInfo](../resources/managedtenants-managementintentinfo.md) collection|A collection of management actions associated with the tenant group.|
 |tenantIds|String collection|A collection of managed tenant identifier that are included in the tenant group.|

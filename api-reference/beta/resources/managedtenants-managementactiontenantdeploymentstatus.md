@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represents the management action deployment status for a managed tenant that is with a specific tenant group.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -28,7 +26,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the management action tenant deployment status. Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|The unique identifier of the management action tenant deployment status.|
 |statuses|[microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md) collection|A collection of management action deployment status associated with the management action tenant deployment status.|
 |tenantGroupId|String|The tenant group identifier of the management action tenant deployment status.|
 |tenantId|String|The Azure Active Directory tenant identifier of the management action tenant deployment status.|

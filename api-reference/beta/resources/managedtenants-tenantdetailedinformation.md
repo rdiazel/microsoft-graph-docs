@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represents the detailed information for each managed tenant.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -33,7 +31,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |countryName|String|The country name where the managed tenant is located.|
 |defaultDomainName|String|The default domain name of the managed tenant.|
 |displayName|String|The display name of the managed tenant.|
-|id|String|The unique identifier of the tenant detailed information. Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|The unique identifier of the tenant detailed information.|
 |industryName|String|The industry name associated with the managed tenant.|
 |region|String|The region where the managed is located.|
 |segmentName|String|The segment associated with the managed tenant.|

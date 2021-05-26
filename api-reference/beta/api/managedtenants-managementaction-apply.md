@@ -46,9 +46,9 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantId|String|**TODO: Add Description**|
-|managementIntentId|String|**TODO: Add Description**|
-|managementTemplateId|String|**TODO: Add Description**|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
+|managementIntentId|String|The identifier of the management intent.|
+|managementTemplateId|String|The identifier of the management template.|
 
 ## Response
 

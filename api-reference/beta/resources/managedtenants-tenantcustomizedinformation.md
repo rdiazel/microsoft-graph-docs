@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represents the customized information for each managed tenant.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -32,7 +30,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |:---|:---|:---|
 |contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of contacts for the managed tenant.|
 |displayName|String|The display name of the managed tenant.|
-|id|String|The unique identifier for the managed tenant. Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|The unique identifier for the managed tenant.|
 |tenantId|String|The Azure Active Directory tenant identifer for the managed tenant.|
 |website|String|The website associated with the managed tenant.|
 

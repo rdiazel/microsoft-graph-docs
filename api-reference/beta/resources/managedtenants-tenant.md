@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represent a tenant that has a relationship with the managing entity.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -33,7 +31,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |contract|[microsoft.graph.managedTenants.tenantContract](../resources/managedtenants-tenantcontract.md)|The tenant contract that exists with the managed tenant.|
 |createdDateTime|DateTimeOffset|The date and time when the managed tenant was created.|
 |displayName|String|The display name of the managed tenant.|
-|id|String|The unique identifier of the managed tenant. Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|The unique identifier of the managed tenant.|
 |lastUpdatedDateTime|DateTimeOffset|The date and time the managed tenant was last updated.|
 |tenantId|String|The Azure Active Directory tenant identifier of the managed tenant.|
 |tenantStatusInformation|[microsoft.graph.managedTenants.tenantStatusInformation](../resources/managedtenants-tenantstatusinformation.md)|The status information of the managed tenant.|

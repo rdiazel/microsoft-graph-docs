@@ -15,8 +15,6 @@ Namespace: microsoft.graph.managedTenants
 
 Represents the group of actions and settings used to perform a specific set of actions or configurations on a managed tenant.
 
-Inherits from [entity](../resources/managedtenants-entity.md).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -31,7 +29,7 @@ Inherits from [entity](../resources/managedtenants-entity.md).
 |category|managementCategory|The category of the management template. Possible values are: `devices`, `identity`, `custom`, `unknownFutureValue`.|
 |description|String|The description of the management template.|
 |displayName|String|The display name of the management template.|
-|id|String|The unique identifier of the management template. Inherited from [entity](../resources/managedtenants-entity.md).|
+|id|String|The unique identifier of the management template.|
 |parameters|[microsoft.graph.managedTenants.templateParameter](../resources/managedtenants-templateparameter.md) collection|A collection of parameters used by the management template.|
 |workloadActions|[microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md) collection|A collection of workload actions that will be performed by the management template.|
 
