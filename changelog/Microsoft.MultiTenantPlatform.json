@@ -125,6 +125,136 @@
     {
       "ChangeList": [
         {
+          "Id": "22156d50-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenants",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenants** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "2217d0f1-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenantsDetailedInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantsDetailedInformation** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "221a342d-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tenantsCustomizedInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantsCustomizedInformation** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
+          "Target": "managedTenant"
+        },
+        {
+          "Id": "221c9778-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workloadStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [workloadStatus](https://docs.microsoft.com/en-us/graph/api/resources/workloadStatus?view=graph-rest-beta) resource type.",
+          "Target": "workloadStatus"
+        },
+        {
+          "Id": "221ef7b1-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantStatusInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantStatusInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantStatusInformation?view=graph-rest-beta) resource type.",
+          "Target": "tenantStatusInformation"
+        },
+        {
+          "Id": "22215a15-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantContactInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantContactInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantContactInformation?view=graph-rest-beta) resource type.",
+          "Target": "tenantContactInformation"
+        },
+        {
+          "Id": "2223bcb0-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantContract",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantContract](https://docs.microsoft.com/en-us/graph/api/resources/tenantContract?view=graph-rest-beta) resource type.",
+          "Target": "tenantContract"
+        },
+        {
+          "Id": "22261ff8-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenant",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource type.",
+          "Target": "tenant"
+        },
+        {
+          "Id": "2228814e-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantDetailedInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantDetailedInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantDetailedInformation?view=graph-rest-beta) resource type.",
+          "Target": "tenantDetailedInformation"
+        },
+        {
+          "Id": "222ae2db-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantCustomizedInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantCustomizedInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantCustomizedInformation?view=graph-rest-beta) resource type.",
+          "Target": "tenantCustomizedInformation"
+        },
+        {
+          "Id": "222d4846-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "tenantOnboardingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantOnboardingStatus** enumeration type.",
+          "Target": "tenantOnboardingStatus"
+        },
+        {
+          "Id": "222fa78f-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "delegatedPrivilegeStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedPrivilegeStatus** enumeration type.",
+          "Target": "delegatedPrivilegeStatus"
+        },
+        {
+          "Id": "22320ade-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "workloadOnboardingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **workloadOnboardingStatus** enumeration type.",
+          "Target": "workloadOnboardingStatus"
+        },
+        {
+          "Id": "22346bae-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Method",
+          "ChangedApiName": "offboardTenant",
+          "ChangeType": "Addition",
+          "Description": "Added the [offboardTenant](https://docs.microsoft.com/en-us/graph/api/tenant-offboardTenant?view=graph-rest-beta) method to the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
+          "Target": "tenant"
+        },
+        {
+          "Id": "2236cfe4-bcff-11eb-a7e3-4fa3ab232c0e",
+          "ApiChange": "Method",
+          "ChangedApiName": "resetTenantOnboardingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [resetTenantOnboardingStatus](https://docs.microsoft.com/en-us/graph/api/tenant-resetTenantOnboardingStatus?view=graph-rest-beta) method to the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-beta) resource.",
+          "Target": "tenant"
+        }
+      ],
+      "Id": "22130c20-bcff-11eb-a7e3-4fa3ab232c0e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-25T02:15:53.928Z",
+      "WorkloadArea": "",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "141f4d58-bcfd-11eb-a7e3-4fa3ab232c0e",
           "ApiChange": "Relationship",
           "ChangedApiName": "managementIntents",
