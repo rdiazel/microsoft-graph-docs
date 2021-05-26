@@ -1,11 +1,15 @@
 ---
-title: "Enum values"
-description: "Microsoft Graph enumeration values"
+title: "Microsoft Graph managed tenants enumeration values"
+description: "Microsoft Graph managed tenants enumeration values"
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: enumTypes
 ---
+
+# Microsoft Graph managed tenants enumeration values
+
+Namespace: microsoft.graph.managedTenants
 
 ### managementActionStatus values
 
