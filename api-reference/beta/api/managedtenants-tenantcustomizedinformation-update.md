@@ -1,7 +1,7 @@
 ---
 title: "Update tenantCustomizedInformation"
 description: "Update the properties of a tenantCustomizedInformation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -46,11 +46,11 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|customerContacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|**TODO: Add Description**|
-|website|String|**TODO: Add Description**|
+|id|String|The identifier of the customized information.|
+|displayName|String|The display name of the managed tenant.|
+|tenantId|String|The Azure Active Directory identifier for the managed tenant.|
+|customerContacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of contact associated with the managed tenant.|
+|website|String|The website for the managed tenant.|
 
 
 
@@ -83,6 +83,7 @@ Content-length: 286
   "website": "String"
 }
 ```
+
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
