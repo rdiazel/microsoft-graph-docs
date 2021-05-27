@@ -71,19 +71,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.tenant",
-    "id": "String (identifier)",
-    "tenantId": "String",
-    "displayName": "String",
-    "contract": {
-      "@odata.type": "microsoft.graph.managedTenants.tenantContract"
-    },
-    "tenantStatusInformation": {
-      "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
-    },
-    "lastUpdatedDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)"
-  }
+  "id": "String (identifier)",
+  "tenantId": "String",
+  "displayName": "String",
+  "contract": {
+    "@odata.type": "microsoft.graph.managedTenants.tenantContract"
+  },
+  "tenantStatusInformation": {
+    "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
+  },
+  "lastUpdatedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)"
 }
 ```
