@@ -52,8 +52,6 @@ The following table shows the properties that are required when you update the [
 |contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of contact associated with the managed tenant.|
 |website|String|The website for the managed tenant.|
 
-
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) object in the response body.
