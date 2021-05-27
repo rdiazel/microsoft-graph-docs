@@ -12,7 +12,7 @@ Namespace: microsoft.graph.manageTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudPcDevice](../resources/managedtenant-cloudpcdevice.md) object.
+Read the properties and relationships of a [cloudPcDevice](../resources/managedtenants-cloudpcdevice.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

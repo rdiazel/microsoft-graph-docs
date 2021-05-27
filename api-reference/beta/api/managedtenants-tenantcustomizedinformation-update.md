@@ -46,7 +46,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/managedtenants-entity.md)|
+|id|String|**TODO: Add Description**|
 |displayName|String|**TODO: Add Description**|
 |tenantId|String|**TODO: Add Description**|
 |customerContacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|**TODO: Add Description**|
@@ -84,7 +84,6 @@ Content-length: 286
 }
 ```
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -109,4 +108,3 @@ Content-Type: application/json
   "website": "String"
 }
 ```
-
