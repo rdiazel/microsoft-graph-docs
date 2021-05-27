@@ -32,7 +32,7 @@ Represents an aggregate of compliant and non-compliant managed device trends for
 |inGracePeriodDeviceCount|Int32|The count of devices on the managed tenant which have are still in their compliance grace period.|
 |noncompliantDeviceCount|Int32|The count of devices on the managed tenant which have a 'noncompliant' state.|
 |tenantDisplayName|String|Display name for the managed tenant.|
-|tenantId|String|The unique identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
 |unknownDeviceCount|Int32|The count of devices on the managed tenant which have an unknown compliance state.|
 
 ## Relationships

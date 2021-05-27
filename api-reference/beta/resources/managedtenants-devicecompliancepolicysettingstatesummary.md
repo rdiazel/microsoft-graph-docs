@@ -37,7 +37,7 @@ Represents a summary of the state for a given device compliance policy setting a
 |settingName|String|Name of the specific device compliance setting.|
 |succeededDeviceCount|Int32|Number of devices where the specific device compliance policy has successfully been applied.|
 |tenantDisplayName|String|Display name for the managed tenant.|
-|tenantId|String|The unique identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
 
 ## Relationships
 None.

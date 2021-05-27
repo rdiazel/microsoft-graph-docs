@@ -29,7 +29,7 @@ Represents a defined collection of Azure resource information that can be used t
 |id|String|The unique identifier for this entity.|
 |lastRefreshedDateTime|DateTimeOffset|The last time the data for this entity was updated.|
 |tenantDisplayName|String|Display name for the managed tenant.|
-|tenantId|String|The unique identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
 
 ## Relationships
 None.

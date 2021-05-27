@@ -33,7 +33,7 @@ Represents a cloud-managed virtual desktop.
 |servicePlanName|String|The service plan name for the cloud PC.|
 |status|String|Status of the cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |tenantDisplayName|String|Display name for the managed tenant.|
-|tenantId|String|The unique identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the cloud PC.|
 
 ## Relationships

@@ -32,7 +32,7 @@ Represents Azure AD users who are at risk across managed tenants. Azure AD conti
 |riskLevel|riskLevel|Level of the detected risky user. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |tenantDisplayName|String|Display name for the managed tenant.|
-|tenantId|String|The unique identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
 |userDisplayName|String|Display name for the Azure AD user.|
 |userId|String|Unique identifier for the Azure AD user.|
 |userPrincipalName|String|The user principal name for the Azure AD user.|

@@ -34,7 +34,7 @@ Represents an aggregated device compliance policy that provides insight into the
 |numberOfNonCompliantDevices|Int64|Number of devices in non-compliant state for this policy.|
 |policyModifiedDateTime|DateTimeOffset|The last recorded update of this policy.|
 |tenantDisplayName|String|Display name for the managed tenant.|
-|tenantId|String|The unique identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
 
 ## Relationships
 None.
