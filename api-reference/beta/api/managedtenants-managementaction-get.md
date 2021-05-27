@@ -78,7 +78,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.managedTenants.managementAction",
     "id": "7a9d3add-3add-7a9d-dd3a-9d7add3a9d7a",
     "referenceTemplateId": "String",
-    "referenceTemplateVersion": "Integer",
     "displayName": "String",
     "description": "String",
     "category": "String",

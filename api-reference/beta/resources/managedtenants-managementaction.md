@@ -52,7 +52,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedTenants.managementAction",
   "id": "String (identifier)",
   "referenceTemplateId": "String",
-  "referenceTemplateVersion": "Integer",
   "displayName": "String",
   "description": "String",
   "category": "String",

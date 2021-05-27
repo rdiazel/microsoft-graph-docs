@@ -33,7 +33,7 @@ Represents a summary of the number of users across managed tenants that have mul
 |ssprEnabledUserCount|Int32|Number of users that are enabled for self-service password reset.|
 |ssprRegisteredUserCount|Int32|Number of users that have registered for self-service password reset.|
 |tenantDisplayName|String|Display name for the managed tenant.|
-|tenantId|String|The unique identifier for the managed tenant.|
+|tenantId|String|The Azure Active Directory identifier for the managed tenant.|
 |totalUserCount|Int32|Total number of accounts in the managed tenant.|
 
 ## Relationships
@@ -52,8 +52,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedTenants.credentialUserRegistrationsSummary",
   "id": "String (identifier)",
-  "organizationId": "String",
-  "organizationDisplayName": "String",
+  "tenantId": "String",
+  "tenantDisplayName": "String",
   "mfaAndSsprCapableUserCount": "Integer",
   "ssprEnabledUserCount": "Integer",
   "mfaRegisteredUserCount": "Integer",

@@ -38,7 +38,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedTenants.managementActionDeploymentStatus",
   "managementTemplateId": "String",
-  "managementTemplateVersion": "Integer",
   "managementActionId": "String",
   "status": "String",
   "workloadActionDeploymentStatuses": [
