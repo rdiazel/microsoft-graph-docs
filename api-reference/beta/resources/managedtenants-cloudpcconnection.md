@@ -18,7 +18,7 @@ Represents a defined collection of Azure resource information that can be used t
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List cloudPcConnections](../api/managedTenants-cloudpcconnection-list.md)|[cloudPcConnection](../resources/managedTenants-cloudpcconnection.md) collection|Get a list of the [cloudPcConnection](../resources/cloudpcconnection.md) objects and their properties.|
+|[List cloudPcConnections](../api/managedTenants-cloudpcconnection-list.md)|[cloudPcConnection](../resources/managedTenants-cloudpcconnection.md) collection|Get a list of the [cloudPcConnection](../resources/managedtenants-cloudpcconnection.md) objects and their properties.|
 |[Get cloudPcConnection](../api/managedTenants-cloudpcconnection-get.md)|[cloudPcConnection](../resources/managedTenants-cloudpcconnection.md)|Read the properties and relationships of a [cloudPcConnection](../resources/managedTenants-cloudpcconnection.md) object.|
 
 ## Properties
