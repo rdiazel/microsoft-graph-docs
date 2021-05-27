@@ -1,25 +1,25 @@
 ---
-title: "Get tenant"
-description: "Read the properties and relationships of a tenant object."
+title: "List tenants"
+description: "Get the tenant resources from the tenants navigation property."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
-# Get tenant
+# List tenants
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [tenant](../resources/managedtenants-tenant.md) object.
+Get the tenant resources from the tenants navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Directory.Read.All|
+|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tenantRelationships/managedTenants/tenants/{tenantId}
+GET /tenantRelationships/managedTenants/tenants
 ```
 
 ## Optional query parameters
@@ -46,18 +46,18 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [tenant](../resources/managedtenants-tenant.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tenant](../resources/tenant.md) objects in the response body.
 
 ## Examples
 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_tenant"
+  "name": "list_tenant"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants/{tenantId}
+GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants
 ```
 
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.tenant"
+  "@odata.type": "Collection(microsoft.graph.managedTenants.tenant)"
 }
 -->
 ``` http
@@ -74,16 +74,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "6e6fbaf4-baf4-6e6f-f4ba-6f6ef4ba6f6e",
-  "tenantId": "String",
-  "displayName": "String",
-  "contract": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantContract"
-  },
-  "tenantStatusInformation": {
-    "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
-  },
-  "lastUpdatedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.managedTenants.tenant",
+      "id": "6e6fbaf4-baf4-6e6f-f4ba-6f6ef4ba6f6e",
+      "tenantId": "String",
+      "displayName": "String",
+      "contract": {
+        "@odata.type": "microsoft.graph.managedTenants.tenantContract"
+      },
+      "tenantStatusInformation": {
+        "@odata.type": "microsoft.graph.managedTenants.tenantStatusInformation"
+      },
+      "lastUpdatedDateTime": "String (timestamp)",
+      "createdDateTime": "String (timestamp)"
+    }
+  ]
 }
 ```

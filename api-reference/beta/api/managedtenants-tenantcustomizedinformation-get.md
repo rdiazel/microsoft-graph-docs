@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -74,17 +74,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
-    "id": "686030d7-30d7-6860-d730-6068d7306068",
-    "displayName": "String",
-    "tenantId": "String",
-    "contacts": [
-      {
-        "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
-      }
-    ],
-    "website": "String"
-  }
+  "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
+  "id": "686030d7-30d7-6860-d730-6068d7306068",
+  "displayName": "String",
+  "tenantId": "String",
+  "contacts": [
+    {
+      "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
+    }
+  ],
+  "website": "String"
 }
 ```
