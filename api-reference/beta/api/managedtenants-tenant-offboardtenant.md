@@ -1,7 +1,7 @@
 ---
 title: "tenant: offboardTenant"
 description: "Off boards a managed tenant from the management platform."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType

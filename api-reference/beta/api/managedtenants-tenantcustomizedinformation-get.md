@@ -1,7 +1,7 @@
 ---
 title: "Get tenantCustomizedInformation"
 description: "Read the properties and relationships of a tenantCustomizedInformation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
@@ -79,7 +79,7 @@ Content-Type: application/json
     "id": "686030d7-30d7-6860-d730-6068d7306068",
     "displayName": "String",
     "tenantId": "String",
-    "customerContacts": [
+    "contacts": [
       {
         "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
       }
@@ -88,4 +88,3 @@ Content-Type: application/json
   }
 }
 ```
-

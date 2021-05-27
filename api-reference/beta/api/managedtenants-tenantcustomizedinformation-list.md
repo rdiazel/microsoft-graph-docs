@@ -80,7 +80,7 @@ Content-Type: application/json
       "id": "686030d7-30d7-6860-d730-6068d7306068",
       "displayName": "String",
       "tenantId": "String",
-      "customerContacts": [
+      "contacts": [
         {
           "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
         }

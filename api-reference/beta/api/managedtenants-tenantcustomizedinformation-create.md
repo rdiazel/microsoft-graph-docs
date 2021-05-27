@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the [
 |id|String|The Azure Active Directory tenant identifier for the managed tenant.|
 |displayName|String|The display name of the managed tenant.|
 |tenantId|String|The Azure Active Directory tenant identifier for the managed tenant.|
-|customerContacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of tenant contacts for the managed tenant.|
+|contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|A collection of tenant contacts for the managed tenant.|
 |website|String|The website for the managed tenant.|
 
 ## Response
@@ -75,7 +75,7 @@ Content-length: 286
   "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",
   "displayName": "String",
   "tenantId": "String",
-  "customerContacts": [
+  "contacts": [
     {
       "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
     }
@@ -102,7 +102,7 @@ Content-Type: application/json
   "id": "686030d7-30d7-6860-d730-6068d7306068",
   "displayName": "String",
   "tenantId": "String",
-  "customerContacts": [
+  "contacts": [
     {
       "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
     }
