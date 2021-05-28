@@ -1,9 +1,9 @@
 ---
 title: "Create tenantTag"
 description: "Create a new tenantTag object."
-author: "isaiahwilliams"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
-ms.prod: "microsoft365-lighthouse"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 doc_type: apiPageType
 ---
 
@@ -46,9 +46,15 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the tenant tag.|
+|createdByUserId|String|The Azure Active Directory user identifier of the user that created the tenant tag.|
+|createdDateTime|DateTimeOffset|The date and time the tenant tag was created.|
+|deletedDateTime|DateTimeOffset|The date and time the tenant tag was deleted.|
 |description|String|The description of the tenant tag.|
-|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|A collection of managed tenants associated with the tenant tag.|
+|displayName|String|The display name of the tenant tag.|
+|id|String|The unique identifier of the tenant tag.|
+|lastActionByUserId|String|The Azure Active Directory user identifier of the user that acted on the tenant last.|
+|lastActionDateTime|DateTimeOffset|The date and time when the last action against the tenant tag.|
+|tenantIds|String collection|A collection of Azure Active Directory tenant identifiers of managed tenants associated with the tenant tag.|
 
 ## Response
 
@@ -65,22 +71,22 @@ If successful, this method returns a `201 Created` response code and a [tenantTa
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags
 Content-Type: application/json
-Content-length: 347
+Content-length: 318
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
   "displayName": "String",
   "description": "String",
   "createdByUserId": "String",
-  "modifiedByUserId": "String",
-  "managedTenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.managedTenantInfo"
-    }
+  "lastActionByUserId": "String",
+  "tenantIds": [
+    "String"
   ],
+  "lastActionDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)"
 }
 ```
+
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -96,17 +102,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-  "id": "9046c8c9-c8c9-9046-c9c8-4690c9c84690",
+  "id": "479ae6ac-e6ac-479a-ace6-9a47ace69a47",
   "displayName": "String",
   "description": "String",
   "createdByUserId": "String",
-  "modifiedByUserId": "String",
-  "managedTenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.managedTenantInfo"
-    }
+  "lastActionByUserId": "String",
+  "tenantIds": [
+    "String"
   ],
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastActionDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)"
 }
 ```
