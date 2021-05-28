@@ -29,14 +29,6 @@ The managedTenant resource represents a container for the actions and resources 
 |[List tenants](../api/managedtenants-managedtenant-list-tenants.md)|[microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md) collection|Get the tenant resources from the tenants navigation property.|
 |[List tenantsCustomizedInformation](../api/managedtenants-managedtenant-list-tenantscustomizedinformation.md)|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection|Get the tenantCustomizedInformation resources from the tenantsCustomizedInformation navigation property.|
 |[List tenantsDetailedInformation](../api/managedtenants-managedtenant-list-tenantsdetailedinformation.md)|[microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md) collection|Get the tenantDetailedInformation resources from the tenantsDetailedInformation navigation property.|
-|[List tenantTags](../api/managedtenants-managedtenant-list-tenanttags.md)|[microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md) collection|Get the tenantTag resources from the tenantTags navigation property.|
-|[Create tenantTag](../api/managedtenants-managedtenant-post-tenanttags.md)|[microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md)|Create a new tenantTag object.|
-
-## Properties
-
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description**.|
 
 ## Relationships
 
@@ -63,21 +55,3 @@ The managedTenant resource represents a container for the actions and resources 
 |tenantTags|[microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md) collection|Tags that can be assigned to managed tenant.|
 |windowsDeviceMalwareStates|[microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md) collection|The state of detected malware on devices running Windows for each managed tenant.|
 |windowsProtectionStates|[microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md) collection|The protection state information available on devices running Windows for each managed tenant.|
-
-## JSON representation
-
-The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedTenants.managedTenant",
-  "baseType": "microsoft.graph.entity",
-  "openType": true
-}
--->
-``` json
-{
-  "@odata.type": "#microsoft.graph.managedTenants.managedTenant",
-  "id": "String (identifier)"
-}
-```

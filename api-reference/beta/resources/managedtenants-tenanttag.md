@@ -1,6 +1,6 @@
 ---
 title: "tenantTag resource type"
-description: "Represent a tag associated with a managed tenant."
+description: "Represent a tag related to a managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
 ms.prod: "microsoft365-lighthouse"
@@ -29,14 +29,15 @@ Represent a tag associated with a managed tenant.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdByUserId|String|The identifier of the user that created the tenant tag.|
+|createdByUserId|String|The Azure Active Directory user identifier of the user that created the tenant tag.|
+|createdDateTime|DateTimeOffset|The date and time the tenant tag was created.|
 |deletedDateTime|DateTimeOffset|The date and time the tenant tag was deleted.|
 |description|String|The description of the tenant tag.|
 |displayName|String|The display name of the tenant tag.|
-|id|String|The identifier of the tenant tag.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the tenant tag was last modified.|
-|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|A collection of managed tenants associated with the tenant tag.|
-|modifiedByUserId|String|The identifier of the user that last modified the tenant tag.|
+|id|String|The unique identifier of the tenant tag.|
+|lastActionByUserId|String|The Azure Active Directory user identifier of the user that acted on the tenant last.|
+|lastActionDateTime|DateTimeOffset|The date and time when the last action against the tenant tag.|
+|tenantIds|String collection|A collection of Azure Active Directory tenant identifiers of managed tenants associated with the tenant tag.|
 
 ## Relationships
 
@@ -60,13 +61,12 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "createdByUserId": "String",
-  "modifiedByUserId": "String",
-  "managedTenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.managedTenantInfo"
-    }
+  "lastActionByUserId": "String",
+  "tenantIds": [
+    "String"
   ],
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastActionDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)"
 }
 ```
