@@ -3,7 +3,7 @@ title: "workloadStatus resource type"
 description: "Represent the on boarding status for a given Microsoft 365 service supported by the management platform."
 author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: resourcePageType
 ---
 

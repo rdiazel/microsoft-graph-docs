@@ -3,7 +3,7 @@ title: "Get managementTemplate"
 description: "Read the properties and relationships of a managementTemplate object."
 author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: apiPageType
 ---
 

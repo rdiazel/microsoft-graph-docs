@@ -481,15 +481,7 @@
     {
       "ChangeList": [
         {
-          "Id": "700aa829-bcfe-11eb-a7e3-4fa3ab232c0e",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "tenantTags",
-          "ChangeType": "Addition",
-          "Description": "Added the **tenantTags** relationship to the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-beta) resource.",
-          "Target": "managedTenant"
-        },
-        {
-          "Id": "700d0f94-bcfe-11eb-a7e3-4fa3ab232c0e",
+          "Id": "7a0e077c-bfae-11eb-995f-5903f88189f5",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantTag",
           "ChangeType": "Addition",
@@ -497,18 +489,26 @@
           "Target": "tenantTag"
         },
         {
-          "Id": "700f6c9e-bcfe-11eb-a7e3-4fa3ab232c0e",
-          "ApiChange": "Resource",
-          "ChangedApiName": "managedTenantInfo",
+          "Id": "7a106bf6-bfae-11eb-995f-5903f88189f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "assignTag",
           "ChangeType": "Addition",
-          "Description": "Added the [managedTenantInfo](https://docs.microsoft.com/en-us/graph/api/resources/managedTenantInfo?view=graph-rest-beta) resource type.",
-          "Target": "managedTenantInfo"
+          "Description": "Added the [assignTag](https://docs.microsoft.com/en-us/graph/api/tenantTag-assignTag?view=graph-rest-beta) method to the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
+          "Target": "tenantTag"
+        },
+        {
+          "Id": "7a12cb73-bfae-11eb-995f-5903f88189f5",
+          "ApiChange": "Method",
+          "ChangedApiName": "unassignTag",
+          "ChangeType": "Addition",
+          "Description": "Added the [unassignTag](https://docs.microsoft.com/en-us/graph/api/tenantTag-unassignTag?view=graph-rest-beta) method to the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-beta) resource.",
+          "Target": "tenantTag"
         }
       ],
-      "Id": "70084406-bcfe-11eb-a7e3-4fa3ab232c0e",
+      "Id": "7a0941ec-bfae-11eb-995f-5903f88189f5",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-05-25T02:10:55.223Z",
+      "CreatedDateTime": "2021-05-28T12:16:05.757Z",
       "WorkloadArea": "",
       "SubArea": ""
     }

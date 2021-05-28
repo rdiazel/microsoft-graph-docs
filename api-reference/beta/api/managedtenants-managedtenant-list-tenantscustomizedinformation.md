@@ -3,7 +3,7 @@ title: "List tenantsCustomizedInformation"
 description: "Get the tenantCustomizedInformation resources from the tenantsCustomizedInformation navigation property."
 author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: apiPageType
 ---
 

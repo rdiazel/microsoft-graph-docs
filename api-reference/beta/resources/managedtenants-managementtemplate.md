@@ -3,7 +3,7 @@ title: "managementTemplate resource type"
 description: "Represents the group of actions and settings used to perform a specific set of actions or configurations on a managed tenant."
 author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: resourcePageType
 ---
 

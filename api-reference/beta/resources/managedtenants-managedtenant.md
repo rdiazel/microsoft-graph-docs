@@ -3,7 +3,7 @@ title: "managedTenant resource type"
 description: "The managedTenant resource represents a container for the actions and resources that are managed by Microsoft 365 Lighthouse."
 author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: resourcePageType
 ---
 
