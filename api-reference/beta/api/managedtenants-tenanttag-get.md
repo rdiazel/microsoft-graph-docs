@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.WriteRead.All|
+|Delegated (work or school account)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -74,17 +74,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "9046c8c9-c8c9-9046-c9c8-4690c9c84690",
-  "displayName": "String",
-  "description": "String",
-  "createdByUserId": "String",
-  "modifiedByUserId": "String",
-  "managedTenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.managedTenantInfo"
-    }
-  ],
-  "lastModifiedDateTime": "String (timestamp)",
-  "deletedDateTime": "String (timestamp)"
+  "value": {
+    "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
+    "id": "479ae6ac-e6ac-479a-ace6-9a47ace69a47",
+    "displayName": "String",
+    "description": "String",
+    "createdByUserId": "String",
+    "lastActionByUserId": "String",
+    "tenantIds": [
+      "String"
+    ],
+    "lastActionDateTime": "String (timestamp)",
+    "createdDateTime": "String (timestamp)",
+    "deletedDateTime": "String (timestamp)"
+  }
 }
 ```

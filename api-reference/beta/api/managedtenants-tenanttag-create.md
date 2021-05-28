@@ -1,9 +1,9 @@
 ---
 title: "Create tenantTag"
 description: "Create a new tenantTag object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "isaiahwilliams"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft365-lighthouse"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.WriteRead.All|
+|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -46,15 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdByUserId|String|The Azure Active Directory user identifier of the user that created the tenant tag.|
-|createdDateTime|DateTimeOffset|The date and time the tenant tag was created.|
-|deletedDateTime|DateTimeOffset|The date and time the tenant tag was deleted.|
-|description|String|The description of the tenant tag.|
 |displayName|String|The display name of the tenant tag.|
-|id|String|The unique identifier of the tenant tag.|
-|lastActionByUserId|String|The Azure Active Directory user identifier of the user that acted on the tenant last.|
-|lastActionDateTime|DateTimeOffset|The date and time when the last action against the tenant tag.|
-|tenantIds|String collection|A collection of Azure Active Directory tenant identifiers of managed tenants associated with the tenant tag.|
 
 ## Response
 
@@ -75,15 +67,7 @@ Content-length: 318
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-  "displayName": "String",
-  "description": "String",
-  "createdByUserId": "String",
-  "lastActionByUserId": "String",
-  "tenantIds": [
-    "String"
-  ],
-  "lastActionDateTime": "String (timestamp)",
-  "deletedDateTime": "String (timestamp)"
+  "displayName": "String"
 }
 ```
 

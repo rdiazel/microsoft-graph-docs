@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|ManagedTenants.WriteRead.All|
+|Delegated (work or school account)|ManagedTenants.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
@@ -46,10 +46,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the tenant tag.|
+|id|String|The unique identifier of the tenant tag.|
 |displayName|String|The display name of the tenant tag.|
-|description|String|The description of the tenant tag.|
-|managedTenants|[microsoft.graph.managedTenants.managedTenantInfo](../resources/managedtenants-managedtenantinfo.md) collection|A collection of managed tenants associated with the tenant tag.|
 
 ## Response
 
@@ -66,19 +64,18 @@ If successful, this method returns a `200 OK` response code and an updated [tena
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 Content-Type: application/json
-Content-length: 347
+Content-length: 318
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
   "displayName": "String",
   "description": "String",
   "createdByUserId": "String",
-  "modifiedByUserId": "String",
-  "managedTenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.managedTenantInfo"
-    }
+  "lastActionByUserId": "String",
+  "tenantIds": [
+    "String"
   ],
+  "lastActionDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)"
 }
 ```
@@ -88,8 +85,7 @@ Content-length: 347
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.managedTenants.tenantTag"
+  "truncated": true
 }
 -->
 ``` http
@@ -98,17 +94,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantTag",
-  "id": "9046c8c9-c8c9-9046-c9c8-4690c9c84690",
+  "id": "479ae6ac-e6ac-479a-ace6-9a47ace69a47",
   "displayName": "String",
   "description": "String",
   "createdByUserId": "String",
-  "modifiedByUserId": "String",
-  "managedTenants": [
-    {
-      "@odata.type": "microsoft.graph.managedTenants.managedTenantInfo"
-    }
+  "lastActionByUserId": "String",
+  "tenantIds": [
+    "String"
   ],
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastActionDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)"
 }
 ```
