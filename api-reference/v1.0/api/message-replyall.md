@@ -2,7 +2,7 @@
 title: "message: replyAll"
 description: "Reply to all recipients of a message using either JSON or MIME format."
 author: "abheek-das"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -77,7 +77,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/replyAll
 Content-type: application/json
-Content-length: 32
 
 {
   "comment": "comment-value"
@@ -99,6 +98,10 @@ Content-length: 32
 [!INCLUDE [sample-code](../includes/snippets/java/message-replyall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-replyall-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -114,8 +117,9 @@ HTTP/1.1 200 OK
 ```
 ### Example 2: Reply-all in MIME format to a message
 ##### Request
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_replyAll_mime_v1"
 }-->
 
@@ -125,6 +129,7 @@ Content-type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
 ```
+
 ##### Response
 Here is an example of the response.
 <!-- {

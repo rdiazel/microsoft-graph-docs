@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph Toolkit with Angular"
 description: "Get started using the Microsoft Graph Toolkit in an Angular application."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
 ---
 
@@ -12,7 +12,7 @@ Microsoft Graph Toolkit components work great with web frameworks like Angular i
 ## Add the Microsoft Graph Toolkit
 
 First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
-```ts
+```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -28,20 +28,20 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 Next, add the Microsoft Graph Toolkit to your project by installing the npm package with:
-```bash
+```Command Line
 npm install @microsoft/mgt
 ```
 ## Initialize a provider
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The provider you use depends on the context in which your solution will be used.
 
-The following example shows how to add the [MSAL 2 Provider](../providers/msal2.md), but you can follow the same model with any of the providers.
+The following example shows how to add the [MSAL2 Provider](../providers/msal2.md), but you can follow the same model with any of the providers.
 >[!NOTE] 
->If you are currently using the MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.
+>If you are currently using the MSAL Provider and would like to update to the MSAL2 Provider, follow the steps in the [MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider) article.
 
 Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider } from '@microsoft/mgt';
 
@@ -90,7 +90,7 @@ You can avoid these errors by changing the default characters used by the Toolki
 
 Import the `TemplateHelper` and use the `.setBindingSyntax()` method to set your custom binding syntax.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
 import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
 
